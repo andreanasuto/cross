@@ -25,9 +25,9 @@ The entire model has centered on purpose to be radically simple and straightforw
 Two main intergovernmental organizations collect and provide data to all other stakeholders including newspaper: UNHCR and International Organization for Migration (IOM). UNHCR provides a basic API but unfortunately doesn't look particularly updated. As matter of fact some calls do not work at all. UNHCR data lack of granularity when it comes to compound the number of deaths. On the other hand, IOM does a great job in collecting information about mortality in the Mediterranean sea with the Missing Migrant Project. Unfortunately, IOM doesn't provide any API framework.
 
 From a data standing point, this project has been developed using:
-*A. [API from UNHCR](http://data2.unhcr.org/en/situations/mediterranean/location/5205) to get the number of arrivals in Italy.
-*B. [IOM data](http://missingmigrants.iom.int/mediterranean) to get the number of deaths and missing migrants.
-**
+* A. [API from UNHCR](http://data2.unhcr.org/en/situations/mediterranean/location/5205) to get the number of arrivals in Italy.
+* B. [IOM data](http://missingmigrants.iom.int/mediterranean) to get the number of deaths and missing migrants.
+
 Since IOM doesn't have an API, I had to implement client-side web scraping. This source ([Client-side web scraping with JavaScript using jQuery and Regex](https://medium.freecodecamp.org/client-side-web-scraping-with-javascript-using-jquery-and-regex-5b57a271cb86)) has been particularly useful. CORS problem emerged has my requests were made to IOM's url to scrape its page.
 
 #### Why client-side web scraping?
